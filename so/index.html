@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>模拟百度搜索</title>
+    <title>模拟搜索</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -72,6 +72,9 @@
                     <label>
                         <input type="radio" name="engine" value="sg"> 搜狗
                     </label>
+                    <label>
+                        <input type="radio" name="engine" value="bing"> 必应
+                    </label>
                 </div>
                 <button type="submit" class="button">搜索</button>
             </div>
@@ -79,7 +82,7 @@
     </div>
 
     <div class="footer">
-        <p>模拟百度搜索 - 非官方</p>
+        <p>模拟搜索 - 非官方</p>
     </div>
 
     <script>
@@ -93,8 +96,9 @@
             if (engine === 'baidu') {
                 searchUrl = 'https://www.baidu.com/s?wd=' + encodeURIComponent(input);
             } else if (engine === 'sg') {
-                // 注意：这里使用的是百度的搜索URL示例，应替换为谷歌的搜索URL
                 searchUrl = 'https://www.sogou.com/web?query=' + encodeURIComponent(input);
+            } else if (engine === 'bing') {
+                searchUrl = 'https://cn.bing.com/search?q=' + encodeURIComponent(input);
             }
 
             window.open(searchUrl, '_blank'); // 在新标签页中打开搜索结果
