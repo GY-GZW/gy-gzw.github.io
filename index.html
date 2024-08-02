@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+	<link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 视口设置 -->
+    <title>果园编程副站</title>
+    <style>
+        /* 基础样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-image: url('https://bing.img.run/rand_uhd.php');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        a {
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        /* 动画 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 按钮样式 */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 0;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background: #0056b3;
+            cursor: pointer;
+        }
+
+        /* 头部样式 */
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+
+        /* 团队成员样式 */
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .member {
+            flex: 0 1 240px; /* 响应式成员盒子 */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            animation: fadeIn 1s ease-out;
+            text-align: center; /* 成员信息居中 */
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .member {
+                flex-basis: 100%; /* 在小屏幕上成员信息占满宽度 */
+            }
+        }
+
+        /* 页脚样式 */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer p {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://vip.helloimg.com/i/2024/07/24/66a066e2da268.gif" alt="果园编程Logo">
+        </div>
+        <h1>果园工作室副网站</h1>
+        <p>最好访问主站：gy216.github.io</p>
+ 	<p>果园工作室是一家专注于编程的工作室，目前在CCW（共创世界）发布作品。</p>
+
+我们的口号是： 用心每一作，发展每一天。
+<br>
+ <a href="/about" class="button">关于我们</a>
+ <a href="/bk" class="button">宝库</a>
+ <a href="/cartoon" class="button">好看的</a>
+ <a href="/fw" class="button">服务</a>
+ <a href="/join" class="button">加入我们</a>
+ <a href="/so" class="button">果园搜索</a>
+ <a href="/dabao.html" class="button">scratch作品打包机（不支持GANDI）</a>
+ <a href="/dabaolod.html" class="button">老版本打包机（不支持GANDI）</a>
+ <a href="/old/indexold" class="button">回到老版本的垃圾网页</a>
+    </header>
+    <section class="team-members">
+        <h2>团队成员</h2>
+        <!-- 团队成员列表 -->
+        <!-- 示例成员信息，您需要添加所有成员的信息 -->
+        <section class="team-members">
+    <h2>团队成员</h2>
+    <div class="member">
+        <h3>果园</h3>
+        <p>CCWID: 196543819</p>
+	<p>个人简介：室长，会AI、Python</p>
+	<p>个性签名：且视他人之凝目如盏盏鬼火，大胆的走你的夜路</p>
+        <a href="https://www.ccw.site/student/61ef9efe4449842875d8f7fe" class="button">个人页面</a>
+    </div>
+    <div class="member">
+        <h3>IW大使</h3>
+        <p>CCWID: 242979307</p>
+	<p>个人简介：副室长，高中生、一个IW玩家、精通scratch</p>
+	<p>个性签名：一个普通iwanna玩家，仅此而已。</p>
+        <a href="https://www.ccw.site/student/6361f00a03ed5b41b82d4cce" class="button">个人页面</a>
+    </div>
+    <div class="member">
+        <h3>上古米歇尔</h3>
+        <p>CCWID: 236339606</p>
+	<p>个人简介：迷你玩家，会C++、汇编，懂电脑</p>
+	<p>个性签名：母牛大使</p>
+        <a href="https://www.ccw.site/student/627e031a5061e01d8dd6d4d5" class="button">个人页面</a>
+    </div>
+    <div class="member">
+        <h3>编程程序玩家</h3>
+        <p>CCWID: 236456039</p>
+	<p>个人简介：暂时没有</p>
+	<p>个性签名：暂时没有</p>
+        <a href="https://www.ccw.site/student/627114fd7780c01e7a3eda6f" class="button">个人页面</a>
+    </div>
+    <div class="member">
+        <h3>极地蛟龙</h3>
+        <p>CCWID: 246191199</p>
+	<p>个人简介：暂时没有</p>
+	<p>个性签名：暂时没有</p>
+        <a href="https://www.ccw.site/student/640418ef9bc4085396341997" class="button">个人页面</a>
+    </div>
+    <div class="member">
+        <h3>永青工作室</h3>
+        <p>CCWID: 241334262</p>
+	<p>个人简介：因为学业，但是我们在等他！</p>
+	<p>个性签名：暂时没有</p>
+        <a href="https://www.ccw.site/student/633ad1affe74357739ce8c4a" class="button">个人页面</a>
+    </div>
+    <div class="member">
+<h3>南翔</h3>
+        <p>CCWID: 244841612</p>
+	<p>个人简介：暂时没有</p>
+	<p>个性签名：暂时没有</p>
+        <a href="https://www.ccw.site/student/63d373e97353890bfcc808b0" class="button">个人页面</a>
+    </div>
+    <div class="member">
+        <h3>ljc</h3>
+        <p>CCWID: 248561390</p>
+	<p>个人简介：果园的同学，会C++，喜欢把国外的作品搞来</p>
+	<p>个性签名：人生如戏，全靠演技</p>
+        <a href="https://www.ccw.site/student/64675d47681a9d18b26d5f34" class="button">个人页面</a>
+    </div>
+    <div class="member">
+        <h3>XRC 我托马莱依拉</h3>
+        <p>CCWID: 237394302</p>
+	<p>个人简介：在HBC认识的xrc</p>
+	<p>个性签名：原神，启动！</p>
+        <a href="https://www.ccw.site/student/62a576ba4de28e738ab45d6a" class="button">个人页面</a>
+    </div>
+	<div class="member">
+        <h3>悦悦</h3>
+        <p>QQ：3102920598</p>
+	<p>个人简介：果园的表妹</p>
+	<p>个性签名：暂时没有</p>
+	</div>
+	<div class="member">
+        <h3>乐乐</h3>
+        	<p>个人简介：果园的表妹</p>
+	<p>个性签名：暂时没有</p>
+        
+    </div>
+</section>
+        <!-- 其他成员信息按照以上格式添加 -->
+    </section>
+    <footer class="footer">
+        <div>
+            <p>本网站的背景图片为Bing每日一图</p>
+	<p>站长：GZW——副站更新日期：2024年8月2日（可能和主站更新不同步）</p>
+            <p>使用Hello图床加载图片，图片网址：https://vip.helloimg.com/i/2024/07/24/66a066e2da268.gif</p>
+            <p>加载网站需要0.01秒，但是以后可能会变动</p>
+       	 <p>果园GICP备20240601号</p>
+             <p>GZW QQ号：2373460868</p>
+            <p>果园 QQ号：386498317</p>
+            <p>果园编程QQ群：749914521</p>
+        </div>
+    </footer>
+</body>
+</html>
