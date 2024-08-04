@@ -1,5 +1,5 @@
 // 创建一个Audio对象  
-var audio = new Audio('Shed A Light(原神启动).mp3');
+var audio = new Audio('Shed A Light.mp3');
 
 // 尝试播放音频  
 audio.play()
