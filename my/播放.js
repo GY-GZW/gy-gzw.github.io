@@ -1,20 +1,20 @@
-// ����һ��Audio����  
-var audio = new Audio('Shed A Light(ԭ������).mp3');
+// 创建一个Audio对象  
+var audio = new Audio('Shed A Light(原神启动).mp3');
 
-// ���Բ�����Ƶ  
+// 尝试播放音频  
 audio.play()
     .then(() => {
-        // ���ųɹ�  
-        console.log('��Ƶ���ųɹ�');
+        // 播放成功  
+        console.log('音频播放成功');
     })
     .catch((error) => {
-        // ����ʧ�ܣ���������Ϊ�Զ����Ų��Ա���ֹ  
+        // 播放失败，可能是因为自动播放策略被阻止  
         if (error.name === 'NotAllowedError') {
-            // ��ʾ�û�������Ű�ť  
-            alert('��Ƶ���ű���ֹ���������Ű�ť�Լ�����');
-            // �����������һЩ�߼�����ʾ�����ò��Ű�ť  
+            // 提示用户点击播放按钮  
+            alert('音频播放被阻止，请点击播放按钮以继续。');
+            // 这里可以添加一些逻辑来显示或启用播放按钮  
         } else {
-            // ����������  
-            console.error('��Ƶ����ʧ��:', error);
+            // 其他错误处理  
+            console.error('音频播放失败:', error);
         }
     });
