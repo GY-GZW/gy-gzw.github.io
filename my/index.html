@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="播放.js">
-        audio.play();
-    </script>
+
     <header>
         <nav>
             <ul>
@@ -17,10 +15,41 @@
                 <li><a href="#about">关于我</a></li>
                 <li><a href="#projects">项目</a></li>
                 <li><a href="#contact">联系方式</a></li>
+                <li><button id="playButton">原神启动</button></li>
             </ul>
         </nav>
     </header>
+    <script>
+        var audio = new Audio('Shed A Light.mp3');
 
+        document.getElementById('playButton').addEventListener('click', function () {
+            if (audio.paused || audio.ended) {
+                audio.play()
+                    .then(() => {
+                        // 注意：这里其实不会进入，因为 play() 不返回 Promise
+                        // 但可以作为一个假设的示例
+                        console.log('音频播放成功（假设的 then 调用）');
+                    })
+                    .catch(error => {
+                        // 由于 play() 不返回 Promise，这里的 catch 不会被调用
+                        // 需要使用其他方式来检测播放错误
+                        if (error.name === 'NotAllowedError') {
+                            alert('音频播放被阻止，请检查浏览器设置。');
+                        } else {
+                            console.error('音频播放失败:', error);
+                        }
+                    });
+
+                // 由于 play() 不返回 Promise，我们在这里添加一个事件监听器来检查播放状态
+                audio.addEventListener('error', function (e) {
+                    // 处理音频加载或播放错误
+                    console.error('音频播放或加载错误:', e);
+                });
+
+                // 还可以添加其他事件监听器，如 'play', 'pause', 'ended' 等
+            }
+        });
+    </script>
     <section id="about">
         <h2>关于我</h2>
         <p>我是上古米歇尔-果园-FD-工作，一个热爱编程和设计的前端开发者。</p>
