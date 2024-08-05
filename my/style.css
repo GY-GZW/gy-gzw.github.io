@@ -1,3 +1,7 @@
+/*html5*/
+article, aside, dialog, footer, header, section, nav, figure, menu {
+    display: block
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
